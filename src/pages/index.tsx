@@ -15,8 +15,8 @@ const IndexPage: React.FC<PageProps> = () => {
                height: "100%",
             }}
          >
-            <h1>Hello 👋 </h1>
-            <h1>I am Akram Ansari</h1>
+            <h1 style={{marginBottom:"5px"}}>Hello 👋 </h1>
+            <h1 style={{marginBottom:"5px"}}>I am Akram Ansari</h1>
             <h1>I am a Fullstack Developer</h1>
          </div>
       </Layout>

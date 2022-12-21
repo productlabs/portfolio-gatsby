@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
 import '../styles/global.css'
-import Footer from "./Footer";
+import { Slice } from "gatsby";
 
 type LayoutProps = {
    children: React.ReactNode;
@@ -10,9 +9,9 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
    return (
       <div style={{padding:"20px",height:"90vh"}}>
-         <Navbar />
+         <Slice alias="navbar" />
          {children}
-         <Footer/>
+         <Slice alias="footer"/>
       </div>
    );
 }
