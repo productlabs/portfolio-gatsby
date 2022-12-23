@@ -4,39 +4,26 @@ import Layout from "../components/Layout";
 export default function contact() {
    return (
       <Layout>
-         <h1 className="center" style={{ margin: "10px 0" }}>
-            Contact
-         </h1>
-         <form
-            className="text-center"
-            style={{
-               display: "flex",
-               alignItems: "center",
-               justifyContent: "center",
-               flexDirection: "column",
-               height: "90%",
-            }}
-         >
+         <h1 className="text-center text-3xl underline my-5">Contact</h1>
+         <form className="flex flex-col justify-center items-center h-full">
             <input
-               style={{ width: "15rem", height: "2rem", margin: "5px 0", padding:"5px" }}
+               className="rounded w-96 p-2 text-black my-2"
                name="name"
                id="name"
                placeholder="Name"
                required
             />
-            <br />
 
             <input
-               style={{ width: "15rem", height: "2rem", margin: "5px 0", padding:"5px" }}
+               className="rounded w-96 p-2 text-black my-2"
                name="email"
                id="email"
                placeholder="Email"
                required
             />
-            <br />
 
             <textarea
-               style={{ width: "15rem", height: "5rem", margin: "5px 0", padding:"5px" }}
+               className="rounded w-96 p-2 text-black my-2"
                name="message"
                id="message"
                placeholder="Message"
@@ -44,7 +31,12 @@ export default function contact() {
             />
 
             <div>
-               <button type="submit" style={{marginTop:"10px"}} >Submit</button>
+               <button
+                  type="submit"
+                  className="border rounded px-3 py-1 bg-blue-600 hover:bg-white hover:text-black my-3 "
+               >
+                  Submit
+               </button>
             </div>
          </form>
       </Layout>

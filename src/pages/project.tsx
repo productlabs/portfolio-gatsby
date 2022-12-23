@@ -24,18 +24,8 @@ export default function project({ data }: ProjectProp) {
    const { edges } = data.allProjectsJson;
    return (
       <Layout>
-         <h1 className="center" style={{ margin: "10px 0" }}>
-            Projects
-         </h1>
-         <div
-            style={{
-               display: "flex",
-               flexWrap: "wrap",
-               justifyContent: "center",
-               height: "90%",
-               overflow: "auto",
-            }}
-         >
+         <h1 className="text-center text-3xl underline my-5">Projects</h1>
+         <div className="flex flex-wrap justify-center h-full mb-8 overflow-auto">
             {edges.map((edge) => (
                <ProjectCard project={edge.node} key={edge.node.id} />
             ))}

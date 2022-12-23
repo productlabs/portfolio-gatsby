@@ -13,37 +13,33 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
    return (
-      <div
-         style={{
-            border: "2px solid black",
-            borderRadius: "10px",
-            height: "350px",
-            width: "300px",
-            margin: "10px",
-            padding: "10px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-         }}
-      >
-         <h2 style={{marginBottom:"5px"}}>{project.title}</h2>
-         <p style={{marginBottom:"5px"}}>{project.description}</p>
-         <div
-            style={{
-               display: "flex",
-               flexWrap: "wrap",
-               justifyContent: "center",
-            }}
-         >
-            {project.stack.map((stack, i) => (
-               <p key={i} className="dib" style= {{margin:"2px"}} >{stack}</p>
-            ))}
+      <div className="flex flex-col text-center justify-between  border-2 border-black rounded h-96 w-80 m-4 p-3">
+         <div>
+            <h2 className="text-2xl my-2">{project.title}</h2>
+            <p>{project.description}</p>
+            <div className="flex justify-center">
+               {project.stack.map((stack, i) => (
+                  <p
+                     key={i}
+                     className="border border-black rounded p-1 m-1 text-green-500"
+                  >
+                     {stack}
+                  </p>
+               ))}
+            </div>
          </div>
 
-         <div style={{ margin: "10px 0" }}>
-            <a href={project.liveLink}><button>View Live</button></a>
-            <a href={project.sourceCodeLink}><button>Source code link</button></a>
+         <div>
+            <a href={project.liveLink}>
+               <button className="border rounded p-1 bg-black hover:bg-white hover:text-black mx-2">
+                  View Live
+               </button>
+            </a>
+            <a href={project.sourceCodeLink}>
+               <button className="border rounded p-1 bg-black hover:bg-white hover:text-black mx-2">
+                  Source code link
+               </button>
+            </a>
          </div>
       </div>
    );

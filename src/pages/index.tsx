@@ -6,18 +6,10 @@ import "../styles/global.css";
 const IndexPage: React.FC<PageProps> = () => {
    return (
       <Layout>
-         <div
-            style={{
-               display: "flex",
-               alignItems: "center",
-               justifyContent: "center",
-               flexDirection: "column",
-               height: "100%",
-            }}
-         >
-            <h1 style={{marginBottom:"5px"}}>Hello 👋 </h1>
-            <h1 style={{marginBottom:"5px"}}>I am Akram Ansari</h1>
-            <h1>I am a Fullstack Developer</h1>
+         <div className="flex flex-col items-center justify-center h-full">
+            <h1 className="text-4xl mb-2">Hello 👋 </h1>
+            <h1 className="text-4xl mb-2">I am Akram Ansari</h1>
+            <h1 className="text-4xl">I am a Fullstack Developer</h1>
          </div>
       </Layout>
    );

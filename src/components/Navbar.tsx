@@ -3,15 +3,23 @@ import React from "react";
 
 export default function Navbar() {
    return (
-      <nav>
+      <nav className="flex justify-between">
          <div>
-            <h2>Portfolio</h2>
+            <h2 className="text-2xl">Portfolio</h2>
          </div>
          <div>
-            <Link to="/">Home</Link>
-            <Link to="/project">Projects</Link>
-            <Link to="/skills">Skills</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/" className="hover:underline px-2">
+               Home
+            </Link>
+            <Link to="/project" className="hover:underline px-2">
+               Projects
+            </Link>
+            <Link to="/skills" className="hover:underline px-2">
+               Skills
+            </Link>
+            <Link to="/contact" className="hover:underline px-2">
+               Contact
+            </Link>
          </div>
       </nav>
    );
