@@ -1,4 +1,4 @@
-import { graphql } from "gatsby";
+import { graphql, HeadFC } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
@@ -33,6 +33,8 @@ export default function project({ data }: ProjectProp) {
       </Layout>
    );
 }
+
+export const Head: HeadFC = () => <title>Projects</title>;
 
 export const queryProject = graphql`
    {

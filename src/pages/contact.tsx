@@ -1,3 +1,4 @@
+import { HeadFC } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 
@@ -42,3 +43,5 @@ export default function contact() {
       </Layout>
    );
 }
+
+export const Head: HeadFC = () => <title>Contact</title>;

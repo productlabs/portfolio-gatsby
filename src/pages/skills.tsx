@@ -7,6 +7,7 @@ import { FaNode } from "@react-icons/all-files/fa/FaNode";
 import { FaHtml5 } from "@react-icons/all-files/fa/FaHtml5";
 import { FaCss3 } from "@react-icons/all-files/fa/FaCss3";
 import { SiMysql } from "@react-icons/all-files/si/SiMysql";
+import { HeadFC } from "gatsby";
 
 export default function skills() {
    return (
@@ -38,3 +39,5 @@ export default function skills() {
       </Layout>
    );
 }
+
+export const Head: HeadFC = () => <title>Skills</title>;
