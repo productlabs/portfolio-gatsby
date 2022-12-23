@@ -34,7 +34,12 @@ export default function project({ data }: ProjectProp) {
    );
 }
 
-export const Head: HeadFC = () => <title>Projects</title>;
+export const Head: HeadFC = () => (
+   <>
+      <title>Projects</title>;
+      <meta name="projects" content="Projects Page" />
+   </>
+);
 
 export const queryProject = graphql`
    {

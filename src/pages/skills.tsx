@@ -40,4 +40,9 @@ export default function skills() {
    );
 }
 
-export const Head: HeadFC = () => <title>Skills</title>;
+export const Head: HeadFC = () => (
+   <>
+      <title>Skills</title>;
+      <meta name="skills" content="Skills Page" />
+   </>
+);
