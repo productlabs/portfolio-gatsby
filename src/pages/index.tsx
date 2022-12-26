@@ -20,6 +20,6 @@ export default IndexPage;
 export const Head: HeadFC = () => (
    <>
       <title>Home Page</title>;
-      <meta name="home" content="Home Page" />
+      <meta name="description" content="Portfolio App"></meta>
    </>
 );
